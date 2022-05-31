@@ -6,16 +6,25 @@ body{
     background-repeat: repeat ;
 
 }
+.menu-link{
+    color: aliceblue;
+    text-decoration:none;
+}
+.menu-link:hover{
+    background-color: rgb(159, 201, 183);
+}
 .menu{
-    background-color:rgb(116, 192, 160);
+    color: aliceblue;
+    background:linear-gradient(to bottom right,rgb(116, 192, 160),rgb(0, 196, 251)/*,rgb(181, 57, 243)*/);
     font-style: italic;
-    color: rgb(0, 0, 0);
     font-size: larger;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 10px;
     padding-right: 10px;
     margin-right: 0%;
+    border-radius: 10px;
+    
 }
 .title{
     color: rgb(238, 228, 212);
@@ -24,7 +33,7 @@ body{
     transition: 1s ease;
 }
 .title:hover{
-    color: rgb(107, 192, 192);
+    color: rgb(107, 192, 192)/*, rgb(0, 196, 251)*/;
 }
 div{
     width: 10;
@@ -41,6 +50,7 @@ div{
     float: inline-end;
     box-shadow: 5%;
     transition-delay: 2s;
+    border-radius: 10px;
 } 
 
 .container{
@@ -54,19 +64,38 @@ div{
 }
 
 .skills{
+    background-color: rgba(240, 255, 255, 0.308);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(240, 248, 255, 0.637);
+    border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     
 }
 .Contact{
+    background-color: rgba(240, 255, 255, 0.308);
+    padding-top: 25px;
+    padding-bottom: 25px;
+    margin-left: 2%;
+    margin-right: 2%;
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(240, 248, 255, 0.637);
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
-    /* margin: 30px; */
+    justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 h3{
     text-align: center;
 }
+
 @media only screen  and (max-width: 600px) {
     #logo{
         width: 20%;
@@ -80,4 +109,13 @@ h3{
         box-shadow: 5%;
         transition-delay: 2s;
     } 
+}
+.footer{
+    color: rgb(0, 0, 0);
+    background:linear-gradient(to bottom right,rgb(116, 192, 160),rgb(0, 196, 251)/*,rgb(181, 57, 243)*/);
+    font-style: italic;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
