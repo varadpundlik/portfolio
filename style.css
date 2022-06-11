@@ -1,21 +1,26 @@
-body{
+body {
     background: rgba(0, 0, 0, 0.897);
     text-align: justify;
-    font-size: 1.1em;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    background-repeat: repeat ;
+    font-size: 1em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background-repeat: repeat;
 
 }
-.menu-link{
+
+.menu-link {
     color: aliceblue;
-    text-decoration:none;
+    text-decoration: none;
 }
-.menu-link:hover{
+
+.menu-link:hover {
     background-color: rgb(159, 201, 183);
 }
-.menu{
+
+.menu {
     color: aliceblue;
-    background:linear-gradient(to bottom right,rgb(116, 192, 160),rgb(0, 196, 251)/*,rgb(181, 57, 243)*/);
+    background: linear-gradient(to bottom right, rgb(116, 192, 160), rgb(0, 196, 251)
+            /*,rgb(181, 57, 243)*/
+        );
     font-style: italic;
     font-size: larger;
     padding-top: 15px;
@@ -24,46 +29,59 @@ body{
     padding-right: 10px;
     margin-right: 0%;
     border-radius: 10px;
-    
+
 }
-.title{
+
+.title {
     color: rgb(238, 228, 212);
     font-size: 25pw;
     float: right;
     transition: 1s ease;
 }
-.title:hover{
-    color: rgb(107, 192, 192)/*, rgb(0, 196, 251)*/;
+
+.title:hover {
+    color: rgb(107, 192, 192)
+        /*, rgb(0, 196, 251)*/
+    ;
 }
-div{
+
+div {
     width: 10;
 }
-#content{
+
+#content {
     color: aliceblue;
     float: inline-start;
     /* font-size: 90 vw;*/
     margin: 20px;
 }
-#photo{
+
+#photo {
     height: 10%;
-    width: 20%; 
+    width: 20%;
     float: inline-end;
     box-shadow: 5%;
     transition-delay: 2s;
     border-radius: 10px;
-} 
-
-.container{
-    display: flex;
-    
 }
-#logo{
+
+.container {
+    display: flex;
+    background-image: url(https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fGNvZGluZ3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+    background-image: opacity(0.1);
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 10px;
+    font-size: 1.1em;
+}
+
+#logo {
     width: 10%;
     height: 5%;
     transition: 10;
 }
 
-.skills{
+.skills {
     background-color: rgba(240, 255, 255, 0.308);
     padding-top: 15px;
     padding-bottom: 15px;
@@ -73,12 +91,29 @@ div{
     border-width: 4px;
     border-color: rgba(240, 248, 255, 0.637);
     border-radius: 10px;
+    /* display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; */
+
+}
+#lang{
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-    
+    flex-wrap: wrap; 
 }
-.Contact{
+#framework{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+#devtools{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap; 
+}
+
+
+.Contact {
     background-color: rgba(240, 255, 255, 0.308);
     padding-top: 25px;
     padding-bottom: 25px;
@@ -92,27 +127,48 @@ div{
     justify-content: space-evenly;
     flex-wrap: wrap;
 }
-h3{
+
+h3 {
     text-align: center;
 }
 
-@media only screen  and (max-width: 600px) {
-    #logo{
+@media only screen and (max-width: 600px) {
+    #logo {
         width: 20%;
         height: 10%;
         transition: 10;
     }
-    #photo{
+
+    #photo {
         height: 15%;
-        width: 30%; 
+        width: 30%;
         float: inline-end;
         box-shadow: 5%;
         transition-delay: 2s;
-    } 
+    }
+
+        .Contact {
+        background-color: rgba(240, 255, 255, 0.308);
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-style: solid;
+        border-width: 4px;
+        border-color: rgba(240, 248, 255, 0.637);
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    
 }
-.footer{
+
+.footer {
     color: rgb(0, 0, 0);
-    background:linear-gradient(to bottom right,rgb(116, 192, 160),rgb(0, 196, 251)/*,rgb(181, 57, 243)*/);
+    background: linear-gradient(to bottom right, rgb(116, 192, 160), rgb(0, 196, 251)
+            /*,rgb(181, 57, 243)*/
+        );
     font-style: italic;
     padding-top: 15px;
     padding-bottom: 15px;
