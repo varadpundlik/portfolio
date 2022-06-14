@@ -30,44 +30,83 @@ body {
     border-radius: 10px;
 
 }
-.menu .icon{
+
+.menu .icon {
     display: none;
 }
-.menu .brand_header{
+
+.menu .brand_header {
     display: none;
 }
+
 @media screen and (max-width: 600px) {
-    .menu a:not(:first-child) {display: none;}
+    .menu a:not(:first-child) {
+        display: none;
+    }
+
     .menu a.icon {
-      float: right;
-      display: block;
+        float: right;
+        display: block;
     }
-  }
-  
-  /* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
-  @media screen and (max-width: 600px) {
-    .menu.responsive {position: relative;}
+}
+
+@media screen and (max-width: 730px) {
+    .showcase {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .codechef {
+        background-color: rgba(255, 255, 255, 0.838);
+        display: flex;
+        justify-content: space-between;
+        border-radius: 10px;
+        padding-right: 30px;
+        padding-left: 30px;
+        margin-bottom: 15px;
+    }
+
+    .github {
+        background-color: rgba(255, 255, 255, 0.838);
+        display: flex;
+        justify-content: space-around;
+        border-radius: 10px;
+        padding-right: 60px;
+        padding-left: 70px;
+
+    }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 600px) {
+    .menu.responsive {
+        position: relative;
+    }
+
     .menu.responsive a.icon {
-      position: absolute;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      right: 0;
-      top: 0;
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        right: 0;
+        top: 0;
     }
+
     .menu.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-      padding-top: 10px;
-      padding-bottom: 10px;
-      padding-left: 10px;
-      padding-right: 10px;
+        float: none;
+        display: block;
+        text-align: left;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
     }
-    .menu.brand_header{
+
+    .menu.brand_header {
         display: block;
     }
 
-  }
+}
+
 .title {
     color: rgb(238, 228, 212);
     font-size: 25pw;
@@ -76,8 +115,7 @@ body {
 }
 
 .title:hover {
-    color: rgb(107, 192, 192)
-    ;
+    color: rgb(107, 192, 192);
 }
 
 div {
@@ -97,7 +135,8 @@ div {
     float: inline-start;
     border-radius: 1000px;
 }
-.container:before{
+
+.container:before {
     content: ' ';
     display: block;
     position: absolute;
@@ -111,7 +150,8 @@ div {
     background-position: 50% 0;
     background-size: cover;
 }
-.container{
+
+.container {
     overflow: hidden;
     position: relative;
     display: flex;
@@ -125,12 +165,14 @@ div {
     transition: 10;
     border-radius: 5px;
 }
-.showcase{
+
+.showcase {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
-.codechef{
+
+.codechef {
     background-color: rgba(255, 255, 255, 0.838);
     display: flex;
     justify-content: center;
@@ -138,19 +180,22 @@ div {
     padding-right: 20px;
     padding-left: 20px;
 }
-.github{
+
+.github {
     background-color: rgba(255, 255, 255, 0.838);
     display: flex;
     justify-content: center;
     border-radius: 10px;
     padding-right: 60px;
-    padding-left: 60px;    
+    padding-left: 60px;
 }
-.github a{
+
+.github a {
     text-decoration: none;
     color: black;
     font-weight: 2em;
 }
+
 .skills {
     background-color: rgba(240, 255, 255, 0.308);
     padding-top: 15px;
@@ -162,20 +207,23 @@ div {
     border-color: rgba(240, 248, 255, 0.637);
     border-radius: 10px;
 }
-#lang{
+
+#lang {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
-#framework{
+
+#framework {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
-#devtools{
+
+#devtools {
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 
@@ -211,24 +259,6 @@ h3 {
         box-shadow: 5%;
         transition-delay: 2s;
     }
-    .codechef{
-        background-color: rgba(255, 255, 255, 0.838);
-        display: flex;
-        justify-content: space-between;
-        border-radius: 10px;
-        padding-right: 30px;
-        padding-left: 30px; 
-        margin-bottom: 15px;
-    }
-    .github{
-        background-color: rgba(255, 255, 255, 0.838);
-        display: flex;
-        justify-content: space-around;
-        border-radius: 10px;  
-        padding-right: 60px;
-        padding-left: 70px;
-           
-    }
 
     .Contact {
         background-color: rgba(240, 255, 255, 0.308);
@@ -244,14 +274,12 @@ h3 {
         justify-content: space-around;
         flex-wrap: wrap;
     }
-    
+
 }
 
 .footer {
     color: rgb(0, 0, 0);
-    background: linear-gradient(to bottom right, rgb(116, 192, 160), rgb(0, 196, 251)
-
-        );
+    background: linear-gradient(to bottom right, rgb(116, 192, 160), rgb(0, 196, 251));
     font-style: italic;
     padding-top: 15px;
     padding-bottom: 15px;
