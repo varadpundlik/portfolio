@@ -32,6 +32,34 @@ body {
         padding-left: 70px;
 
     }
+    #group1{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #skills {
+        background-color: rgba(240, 255, 255, 0.308);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-style: solid;
+        border-width: 4px;
+        border-color: rgba(240, 248, 255, 0.637);
+        border-radius: 10px;
+    }
+    
+    #Edu{
+        background-color: rgba(240, 255, 255, 0.308);
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-left: 2%;
+        margin-right: 2%;
+        border-style: solid;
+        border-width: 4px;
+        border-color: rgba(240, 248, 255, 0.637);
+        border-radius: 10px;    
+    }
 }
 
 .title {
@@ -71,7 +99,7 @@ div {
     margin-right: auto;
 }
 
-.container:before {
+#container:before {
     content: ' ';
     display: block;
     position: absolute;
@@ -88,7 +116,7 @@ div {
     z-index: 1;
 }
 
-.container {
+#container {
     overflow: hidden;
     position: relative;
     border-radius: 10px;
@@ -109,6 +137,7 @@ div {
     border-radius: 10px;
     padding-right: 20px;
     padding-left: 20px;
+    width:380px;
 }
 
 .github {
@@ -118,6 +147,7 @@ div {
     border-radius: 10px;
     padding-right: 60px;
     padding-left: 60px;
+    width: 380px;
 }
 
 .github a {
@@ -125,9 +155,27 @@ div {
     color: black;
     font-weight: 2em;
 }
-
-.skills {
+#group1{
+    display: flex;
+    justify-content: space-evenly;
+}
+#skills {
     background-color: rgba(240, 255, 255, 0.308);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    /* margin-left: 2%;
+    margin-right: 2%; */
+    border-style: solid;
+    border-width: 4px;
+    border-color: rgba(240, 248, 255, 0.637);
+    border-radius: 10px;
+    width: 380px;
+    
+}
+
+#Edu{
+    background-color: rgba(240, 255, 255, 0.308);
+    width: 390px;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-left: 2%;
@@ -136,23 +184,13 @@ div {
     border-width: 4px;
     border-color: rgba(240, 248, 255, 0.637);
     border-radius: 10px;
-}
-
-#Edu{
-    background-color: rgba(240, 255, 255, 0.308);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    margin-left: 2%;
-    margin-right: 2%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgba(240, 248, 255, 0.637);
-    border-radius: 10px;    
+    width:380px;    
 }
 #lang {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    flex-direction: row;
 }
 
 #framework {
@@ -169,15 +207,6 @@ div {
 
 
 .Contact {
-    background-color: rgba(240, 255, 255, 0.308);
-    padding-top: 25px;
-    padding-bottom: 25px;
-    margin-left: 2%;
-    margin-right: 2%;
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgba(240, 248, 255, 0.637);
-    border-radius: 10px;
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
@@ -200,22 +229,26 @@ h3 {
     }
 
     .Contact {
-        background-color: rgba(240, 255, 255, 0.308);
-        padding-top: 25px;
-        padding-bottom: 25px;
-        margin-left: 2%;
-        margin-right: 2%;
-        border-style: solid;
-        border-width: 4px;
-        border-color: rgba(240, 248, 255, 0.637);
-        border-radius: 10px;
         display: flex;
         justify-content: space-around;
+        
         flex-wrap: wrap;
     }
 
 }
-
+#PICT{
+    display: flex;
+    margin: 10px;
+    padding: 10px;
+}
+#DAE{
+    margin: 10px;
+    padding: 10px;
+}
+#VVVP{
+    margin: 10px;
+    padding: 10px;
+}
 .footer {
     color: rgb(0, 0, 0);
     background: linear-gradient(to bottom right, rgb(116, 192, 160), rgb(0, 196, 251));
