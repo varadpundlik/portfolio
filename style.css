@@ -6,49 +6,61 @@ body {
     background-repeat: repeat;
 
 }
-
-@media screen and (max-width: 730px) {
+h1 {
+    text-shadow: 2px 2px 5px seagreen;
+  }
+h1,h2,h3,h4{
+    color: aliceblue;
+}
+#ow_title{
+    text-shadow: 2px 2px 5px seagreen;
+}
+#sk_title{
+    height: 50px;
+}
+#web{
+    display: flex; 
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+}
+#cp{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+#cp-logo{
+    border-radius: 40px;
+}
+#overview{
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 819px){
     .showcase {
         display: flex;
         flex-direction: column;
     }
-
     .codechef {
-        background-color: rgba(255, 255, 255, 0.838);
+        background-color: rgba(240, 255, 255, 0.308);
         display: flex;
         justify-content: space-between;
         border-radius: 10px;
         padding-right: 30px;
         padding-left: 30px;
         margin-bottom: 15px;
+        width: 100%;
     }
-
-    .github {
-        background-color: rgba(255, 255, 255, 0.838);
-        display: flex;
-        justify-content: space-around;
-        border-radius: 10px;
-        padding-right: 60px;
-        padding-left: 70px;
-
-    }
-    #group1{
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
+}
+@media screen and (max-width: 730px) {
     #skills {
-        background-color: rgba(240, 255, 255, 0.308);
-        padding-top: 15px;
-        padding-bottom: 15px;
+        width: 90%;
+        padding: 15px;
         margin-left: 2%;
         margin-right: 2%;
-        border-style: solid;
-        border-width: 4px;
-        border-color: rgba(240, 248, 255, 0.637);
-        border-radius: 10px;
     }
-    
+    #skills_icon{
+        display: none;
+    }
     #Edu{
         background-color: rgba(240, 255, 255, 0.308);
         padding-top: 15px;
@@ -60,31 +72,19 @@ body {
         border-color: rgba(240, 248, 255, 0.637);
         border-radius: 10px;    
     }
+    #edu_icon{
+        display: none;
+    }
 }
 
 .title {
     color: rgb(238, 228, 212);
     font-size: 25pw;
     transition: 1s ease;
-    animation: title 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
-}
-
-@keyframes title{
-    0% {font: "copperplate";}
-    20% {font: "times new roman";}
-    40% {font: "papyrus";}
-    60% {font: "Lucida Console";}
-    80% {font: "Georgia";}
-    100% {font: "Monaco";}
 }
 .title:hover {
     color: rgb(107, 192, 192);
 }
-
-div {
-    width: 10;
-}
-
 .content {
     color: aliceblue;
     margin: 20px;
@@ -131,51 +131,59 @@ div {
 }
 
 .codechef {
-    background-color: rgba(255, 255, 255, 0.838);
-    display: flex;
-    justify-content: center;
-    border-radius: 10px;
-    padding-right: 20px;
-    padding-left: 20px;
-    width:380px;
-}
-
-.github {
-    background-color: rgba(255, 255, 255, 0.838);
+    background-color: rgba(240, 255, 255, 0.308);
     display: flex;
     justify-content: center;
     border-radius: 10px;
     padding-right: 60px;
     padding-left: 60px;
-    width: 380px;
 }
 
+.github {
+    background-color: rgba(240, 255, 255, 0.308);
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+    padding-right: 60px;
+    padding-left: 60px;
+}
+.codeforces{
+    background-color: rgba(240, 255, 255, 0.308);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
 .github a {
     text-decoration: none;
     color: black;
     font-weight: 2em;
 }
-#group1{
+.group1{
+    display: flex;
+    justify-content: space-around;
+}
+.group2{
     display: flex;
     justify-content: space-evenly;
 }
+#skills_icon{
+    border-radius: 50px;
+    width: 50%;
+}
+#edu_icon{
+    border-radius: 200x;
+    width: 50%;
+}
 #skills {
-    background-color: rgba(240, 255, 255, 0.308);
-    padding-top: 15px;
-    padding-bottom: 15px;
-    /* margin-left: 2%;
-    margin-right: 2%; */
-    border-style: solid;
-    border-width: 4px;
-    border-color: rgba(240, 248, 255, 0.637);
-    border-radius: 10px;
-    width: 380px;
-    
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #Edu{
     background-color: rgba(240, 255, 255, 0.308);
-    width: 390px;
     padding-top: 15px;
     padding-bottom: 15px;
     margin-left: 2%;
@@ -183,28 +191,14 @@ div {
     border-style: solid;
     border-width: 4px;
     border-color: rgba(240, 248, 255, 0.637);
-    border-radius: 10px;
-    width:380px;    
+    border-radius: 40px;   
 }
-#lang {
+.lang {
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
     flex-direction: row;
 }
-
-#framework {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
-#devtools {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-}
-
 
 .Contact {
     display: flex;
